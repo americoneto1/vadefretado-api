@@ -1,0 +1,17 @@
+{
+  "name": "FretadoAPI",
+  "version": "0.0.1",
+  "description": "Fretado API",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/americoneto1/vadefretado-api.git"
+  },
+  "author": "Américo de Souza Neto <americoneto1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "~0.13.1",
+    "restify": "~2.7.0",
+    "q": "~1.0.1"
+  }
+}
