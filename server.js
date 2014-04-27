@@ -7,7 +7,7 @@ app.use(restify.queryParser());
 app.use(restify.jsonp());
 
 app.get("/api/associacoes/:id/linhas", function(req, res) {
-	//res.charSet('utf-8');
+	res.charSet('utf-8');
 	console.log('Request /api/associacoes/', req.params.id, '/linhas');
 	var API = require('./lib/FretadoApp.API.Associacoes');
 	API.getLinhas(req.params.id, function(associacao) {
