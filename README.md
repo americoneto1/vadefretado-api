@@ -3,7 +3,20 @@ Vá de Fretado - API
 
 API responsável por extrair informações dos sites de associações de fretado.
 
-Formato JSON de retorno padrão:
+Hospedagem
+---------------------------------------------
+Atualmente a API está hospedada em http://vadefretado.azurewebsites.net/api
+
+
+URLs disponíveis na API
+---------------------------------------------
+* GET - /associacoes - Retorna as associações disponíveis
+* GET - /associacoes/:id - Retorna os dados da associação informada pelo ID 
+* GET - /associacoes/:id/linhas - Retorna as linhas da associação informada pelo ID 
+
+
+Formato JSON de retorno padrão
+---------------------------------------------
 
 ```javascript
 {
