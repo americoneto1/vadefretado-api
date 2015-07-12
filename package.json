@@ -11,9 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "~0.13.1",
-    "restify": "~2.7.0",
-    "q": "~1.0.1",
     "entities": "~1.1.1",
-    "pdf2json": "^0.6.7"
+    "mongoose": "^4.0.7",
+    "pdf2json": "^0.6.7",
+    "q": "~1.0.1",
+    "restify": "~2.7.0"
   }
 }
