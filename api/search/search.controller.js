@@ -18,7 +18,7 @@ exports.by = function(req, res) {
       { ida: new RegExp(origem, 'i') },
       { volta: new RegExp(destino, 'i') },
     ]
-  }, 'nome numero company_id', function (err, entities) {
+  }).select('nome numero company_id').sort({ company_id: 1, numero: 1 }).exec(function (err, entities) {
     if(err) { return handleError(res, err); }
 
     var result = _.chain(entities)
