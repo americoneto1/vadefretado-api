@@ -3,7 +3,7 @@
 var Line = require('./lines.model');
 
 exports.all = function(req, res) {
-  Line.find({ company_id: req.params.id }, 'numero nome', function (err, entities) {
+  Line.find({ company_id: req.params.id }).select('numero nome').sort({ numero: 1 }).exec(function (err, entities) {
     if(err) { return handleError(res, err); }
     return res.json(200, entities);
   });
